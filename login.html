@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم بیمه خودرو - ورود و ثبت نام</title>
+    <link rel="stylesheet" href="./style/stylee.css">
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="form-container login-form">
+            <h2 class="form-title">ورود به حساب کاربری</h2>
+            
+            <div class="social-login">
+                <div class="social-btn google">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            
+            <div class="form-divider">
+                <span>یا با ایمیل وارد شوید</span>
+            </div>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="آدرس ایمیل" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="رمز عبور" required>
+                    <span class="toggle-password" id="toggleLoginPassword">
+                        <i class="far fa-eye"></i>
+                    </span>
+                </div>
+                
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" id="rememberMe">
+                        <span>مرا به خاطر بسپار</span>
+                    </label>
+                    <a href="#" id="forgotPassword">رمز عبور را فراموش کرده‌اید؟</a>
+                </div>
+                
+                <button type="submit" class="submit-btn">ورود به حساب</button>
+            </form>
+            
+            <p class="auth-switch">
+                حساب کاربری ندارید؟ <a href="#" id="showRegister">ثبت نام کنید</a>
+            </p>
+        </div>
+        
+        <div class="form-container register-form" style="display: none;">
+            <h2 class="form-title">ایجاد حساب کاربری</h2>
+            
+            <form id="registerForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="registerName" placeholder="نام کامل" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="registerEmail" placeholder="آدرس ایمیل" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="registerPhone" placeholder="شماره تلفن" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="registerPassword" placeholder="رمز عبور" required>
+                    <span class="toggle-password" id="toggleRegisterPassword">
+                        <i class="far fa-eye"></i>
+                    </span>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="registerConfirmPassword" placeholder="تکرار رمز عبور" required>
+                </div>
+                
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" id="agreeTerms" required>
+                        <span>با <a href="#">شرایط و ضوابط</a> موافقم</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">ایجاد حساب</button>
+            </form>
+            
+            <p class="auth-switch">
+                قبلاً حساب دارید؟ <a href="#" id="showLogin">وارد شوید</a>
+            </p>
+        </div>
+        
+        <div class="welcome-container">
+            <div class="welcome-text">
+                <h2>به سیستم بیمه خودرو خوش آمدید</h2>
+                <p>با حساب کاربری خود می‌توانید از خدمات آنلاین بیمه خودرو استفاده کرده و بهترین طرح بیمه را برای خودروی خود انتخاب کنید.</p>
+                <button class="welcome-btn" id="panelButton">ورود به پنل کاربری</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/scriptt.js"></script>
+</body>
+</html>

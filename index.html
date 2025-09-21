@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>محاسبه ی آنلاین بیمه ی خودرو</title>
+</head>
+<body dir="rtl">
+  <a href="./login.html">
+    <img src="./images/4photoshop-icon-home-آیکون-خانه.jpg" alt="" width="50px" class="fi">
+</a>
+  
+
+    <div class="two_div">
+        <h2>محاسبه آنلاین قیمت بیمه خودرو</h2>
+    </div>
+    <header>
+       
+      <div class="one_div" id="divBOX">
+        </div>
+        <h6>مدل خودرو</h6>
+        <select id="make">
+            <option value="">یک گزینه را انتخاب کنید</option>
+            <option value="pride 132">پراید 132</option>
+            <option value="peugeot 206">پژو 206</option>
+            <option value="samand suren +">سورن +</option>
+            <option value="saina">ساینا</option>
+            <option value="tiba">تیبا 2</option>
+            <option value="dena +">دنا +</option>
+            <option value="peugeot pars">پژو پارس</option>
+            <option value="renoit p90">رنو L90</option>
+            <option value="peugeot 405">پژو 405</option>
+            <option value="peugeot 207">پژو 207</option>
+            <option value="quick">کوِیک</option>
+            <option value="lamari">لاماری ایما</option>
+            <option value="arisan">آریسان 2</option>
+            <option value="tara">تارا</option>
+            <option value="atlas">اطلس</option>
+            <option value="pride 111">پراید 111</option>
+            <option value="shahin 2">شاهین 2</option>
+            <option value="samand lx">سمند Lx</option>
+            <option value="sahand">سهند</option>
+            <option value="tego 8 pro max">تیگو 8 پرو مکس</option>
+            <option value="tego 8 pro">تیگو 8 پرو</option>
+            <option value="tego 7 pro">تیگو 7 پرو</option>
+            <option value="tego 7">تیگو 7</option>
+            <option value="arizo 6 pro max">اریزو 6 پرو مکس</option>
+            <option value="arizo 6 pro">اریزو 6 پرو</option>
+            <option value="arizo 6">اریزو 6</option>
+            <option value="arizo 5 pro">اریزو 5 پرو</option>
+            <option value="arizo 5">اریزو 5</option>
+            <option value="jac s5">جک s5</option>
+            <option value="Azera 2010">آزرا 2010</option>
+            <option value="sunata">سوناتا</option>
+            <option value="toyota FH 2019">تویوتا FH 2019</option>
+            <option value="toyota landcroser 2022">تویوتا لندکروزر 2022</option>
+            <option value="Rangrower 2024">رنجرور 2024</option>
+            <option value="suntafe">سانتافه</option>
+          </select>
+            <hr>
+        <h6>مدل ساخت</h6>
+        <select id="yearSelect">
+
+        </select>
+        <hr>
+        <p style="font-size:15px ; color: #000; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">نوع بیمه</p>
+        <label for="radio2" id="year">ساده-شخص ثالث</label>
+        <input type="radio" name="radio1" id="radio1">
+        <br>
+        <label for="radio1">کامل-شخص ثالث با بیمه بدنه</label>
+        <input type="radio" name="radio1" id="radio2" checked>
+        <br>
+        <br>
+        <br>
+        <button type="click" class="btn_send">ارسال اطلاعات</button>
+          </div>
+    </header>
+    
+<div id="loading" style="display: none;">
+    <div class="loading-content">
+      <div class="loader"></div>
+      <p>در حال محاسبه قیمت بیمه...</p>
+    </div>
+  </div>
+  
+
+  <div id="loading" class="loading-container">
+    <div class="loading-content">
+      <div class="loader">
+        <div class="orbit"></div>
+        <div class="planet"></div>
+        <div class="rocket">
+          <div class="rocket-body"></div>
+          <div class="window"></div>
+          <div class="fire">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <p class="loading-text">در حال محاسبه قیمت بیمه...</p>
+    </div>
+  </div>
+  
+  <!-- صفحه نتیجه -->
+  <div id="result" class="result-container">
+    <div class="result-content">
+      <h3>نتیجه محاسبه بیمه</h3>
+      <div id="result-text"></div>
+      <button onclick="closeResult()" class="result-btn">بستن</button>
+    </div>
+  </div>
+
+
+<div id="loading">
+  <div class="loader"></div>
+  <p class="loading-text">در حال محاسبه قیمت بیمه...</p>
+</div>
+<br>
+<br>
+<br>
+<div class="endd_div">
+  <p>شما می توانید از طریق راه های زیر با ما<br>در ارتباط باشید</p>
+  <br>
+  <a href="mailto:shakhh327@gmail.com"><li>ایمیل به ما</li></a>
+  <br>
+  <a href="mailto:sepehrkur@gmail.com"><li>2_ایمیل به ما</li></a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="endd_p">تمامی شرایط محفوظ می باشند <br>
+    © 2025 - این سایت حق کپی رایت دارد و هر گونه<br>کپی از آن مجازات قانونی دارد.
+  <br>
+  محاسبه ی آنلاین قیمت بیمه خودرو
+
+  </p>
+</div>
+
+    <script src="./script/script.js"></script>
+    
+</body>
+</html>
